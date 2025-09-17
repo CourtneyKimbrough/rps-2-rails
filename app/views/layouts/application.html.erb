@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RPS</title>
+    <title>Ruby RPS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="/icon.png">
+    <style>
+      .navbar {
+        flex-direction: column;
+        }
+  
+    </style>
   </head>
 
   <body>
 
+    <div class="navbar">
+      <div><a href="/rock">Play Rock</a></div>
+      <div><a href="/paper">Play Paper</a></div>
+      <div><a href="/scissors">Play Scissors</a></div>
+
+    </div>
+
     <%= yield %>
+
   </body>
 </html>
